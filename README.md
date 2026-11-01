@@ -81,11 +81,17 @@ RVC 的典型部署由引擎和兼容中间层组成。已使用过的中间层�
 |---|---|
 | `enable_rvc` | 开启 RVC；不使用的 SVC/SVCVC 可关闭 |
 | `rvc_base_url` | `http://127.0.0.1:3333/`，填写中间层地址，保留结尾 `/` |
-| `rvc_models_keywords` | `模型.pth|||显示名称`，可用 `/刷新rvc模型` 读取模型 |
+| `rvc_models_keywords` | 模型文件名与显示别名，可用 `/刷新rvc模型` 读取模型 |
 | `default_api_type` | `rvc` |
 | `default_model_index` | 从 `1` 开始的默认音色序号 |
 | `f0_method` | RVC 示例值 `rmvpe` |
 | `inference_timeout` | 按设备和歌曲长度设置，例如 `900` 秒 |
+
+音色别名格式示例：
+
+```text
+模型.pth|||显示名称
+```
 
 音色模型及对应索引需自行准备并部署在后端。服务运行后，发送 `/翻唱 歌名`，按提示选歌、选音色即可。SVC-Fusion 和 SoulX-SVCVC 的参数及入口见 [原版说明](README_UPSTREAM.md)。
 
