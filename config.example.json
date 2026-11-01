@@ -1,0 +1,25 @@
+{
+  "default_api": "qqmusic",
+  "enable_qqmusic": true,
+  "disable_netease": true,
+  "enable_rvc": true,
+  "enable_svc": false,
+  "enable_svcvc": false,
+  "rvc_base_url": "http://127.0.0.1:3333/",
+  "default_api_type": "rvc",
+  "rvc_models_keywords": [
+    "maobailing_rvc.pth|||中文女声（maobailing）"
+  ],
+  "default_model_index": 1,
+  "default_key_shift": 0,
+  "timeout": 60,
+  "inference_timeout": 900,
+  "f0_method": "rmvpe",
+  "index_rate": "0.6",
+  "quiet_mode": true,
+  "max_song_audio_size_mb": 200,
+  "enable_send_file": false,
+  "enable_smart_cover": true,
+  "llm_force_mode": false,
+  "original_song_ffmpeg_path": "请填写本机ffmpeg.exe完整路径"
+}
